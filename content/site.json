@@ -14,6 +14,10 @@
       {
         "name": "History",
         "link": "/history"
+      },
+      {
+        "name": "Catalog",
+        "link": "/catalog"
       }
     ],
     "warning": {
