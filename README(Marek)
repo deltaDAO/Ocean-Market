@@ -1,0 +1,7 @@
+To learn about the code and connections between the components I've used the inspect+component tree in the browser. Also, I've tried to learn as much as possible 
+about the Typescript, as I've never used it.
+Later to figure out how to add the new page and connected it to the existing project I was using a global search in VSCode.
+As long as creating a new component on the page by copying the Bookmark component, and finding a solution to add new info to the Table might have been easier,
+refactoring the code to query the data from the Aquarius was tough and took me half of the whole "project time".
+
+Thank You for this opportunity. 
