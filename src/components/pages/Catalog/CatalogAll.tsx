@@ -51,47 +51,45 @@ async function getAssets(
     Logger.error(error.message)
   }
 }
-export default function CatalogAll(): ReactElement {
-  const { ddo, type } = useAsset()
-  const isCompute = Boolean(ddo?.findServiceByType('compute'))
-  const accessType = isCompute ? 'compute' : 'access'
-  const columns = [
-    {
-      name: 'Data Set',
-      selector: function getAssetRow(row: AssetListPrices) {
-        const { attributes } = row.ddo.findServiceByType('metadata')
-        return <AssetTitle title={attributes.main.name} ddo={row.ddo} />
-      },
-      maxWidth: '45rem',
-      grow: 1
-    },
-    {
-      name: 'Datatoken Symbol',
-      selector: function getAssetRow(row: AssetListPrices) {
-        return (
-          <Tooltip content={row.ddo.dataTokenInfo.name}>
-            {row.ddo.dataTokenInfo.symbol}
-          </Tooltip>
-        )
-      },
-      maxWidth: '10rem'
-    },
-    {
-      name: 'Asset Type',
-      selector: function getAssetRow(row: AssetListPrices) {
-        return <AssetType type={type} accessType={accessType} />
-      },
-      maxWidth: '10rem'
-    },
-    {
-      name: 'Price',
-      selector: function getAssetRow(row: AssetListPrices) {
-        return <Price price={row.price} small />
-      },
-      right: true
-    }
-  ]
 
+const columns = [
+  {
+    name: 'Data Set',
+    selector: function getAssetRow(row: AssetListPrices) {
+      const { attributes } = row.ddo.findServiceByType('metadata')
+      return <AssetTitle title={attributes.main.name} ddo={row.ddo} />
+    },
+    maxWidth: '45rem',
+    grow: 1
+  },
+  {
+    name: 'Datatoken Symbol',
+    selector: function getAssetRow(row: AssetListPrices) {
+      return (
+        <Tooltip content={row.ddo.dataTokenInfo.name}>
+          {row.ddo.dataTokenInfo.symbol}
+        </Tooltip>
+      )
+    },
+    maxWidth: '10rem'
+  },
+  {
+    name: 'Asset Type',
+    selector: function getAssetRow(row: AssetListPrices) {
+      const { attributes } = row.ddo.findServiceByType('metadata')
+      return <AssetTitle title={attributes.main.type} ddo={row.ddo} />
+    },
+    maxWidth: '10rem'
+  },
+  {
+    name: 'Price',
+    selector: function getAssetRow(row: AssetListPrices) {
+      return <Price price={row.price} small />
+    },
+    right: true
+  }
+]
+export default function CatalogAll(): ReactElement {
   const { appConfig } = useSiteMetadata()
   const { bookmarks } = useUserPreferences()
 
