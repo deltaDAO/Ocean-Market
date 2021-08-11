@@ -110,6 +110,7 @@ export default function Bookmarks(): ReactElement {
           resultPinned?.results
         )
         setPinned(pinnedAssets)
+        console.log(pinned)
       } catch (error) {
         Logger.error(error.message)
       }
