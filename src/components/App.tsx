@@ -36,16 +36,12 @@ export default function App({
   const data = useStaticQuery(contentQuery)
   const purgatory = data.purgatory.edges[0].node.childContentJson.account
 
-  const { warning } = useSiteMetadata()
   const { accountId } = useWeb3()
   const { isInPurgatory, purgatoryData } = useAccountPurgatory(accountId)
 
   return (
     <Styles>
       <div className={styles.app}>
-        {(props as PageProps).uri === '/' && (
-          <AnnouncementBanner text={warning.main} />
-        )}
         <Header />
 
         {isInPurgatory && (
