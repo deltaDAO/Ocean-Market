@@ -18,7 +18,7 @@ export default function Menu(): ReactElement {
       <Link to="/" className={styles.logo}>
         <Logo noWordmark />
         <h1 className={styles.title}>
-          {siteTitle} <Badge label="v3" />
+          {siteTitle} {/* <Badge label="v3" /> */}
         </h1>
       </Link>
       <div className={styles.actions}>
