@@ -68,9 +68,13 @@ function AssetProvider({
     setLoading(true)
     const ddo = await retrieveDDO(asset as string, token)
     const isWhitelisted = isDDOWhitelisted(ddo)
-    if (!ddo || !isWhitelisted) {
+    if (!ddo) {
       setError(
         `[asset] The DDO for ${asset} was not found in MetadataCache. If you just published a new data set, wait some seconds and refresh this page.`
+      )
+    } else if (!isWhitelisted) {
+      setError(
+        `[asset] The DDO for ${asset} can not be retrieved on this portal.`
       )
     } else {
       setError(undefined)
@@ -127,6 +131,17 @@ function AssetProvider({
     if (!ddo) return
     setLoading(true)
     const returnedPrice = await getPrice(ddo)
+    if (
+      appConfig.allowDynamicPricing !== 'true' &&
+      returnedPrice.type === 'pool'
+    ) {
+      setError(
+        `[asset] The asset ${ddo.id} can not be displayed on this market.`
+      )
+      setDDO(undefined)
+      setLoading(false)
+      return
+    }
     setPrice({ ...returnedPrice })
 
     // Get metadata from DDO

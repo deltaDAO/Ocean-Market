@@ -5,10 +5,11 @@ import loadable from '@loadable/component'
 import styles from './Menu.module.css'
 import { useSiteMetadata } from '../../hooks/useSiteMetadata'
 import UserPreferences from './UserPreferences'
-import Badge from '../atoms/Badge'
 import Logo from '../atoms/Logo'
 import Networks from './UserPreferences/Networks'
 import SearchBar from './SearchBar'
+import Container from '../atoms/Container'
+import Badge from '../atoms/Badge'
 
 export default function Menu(): ReactElement {
   const { siteTitle } = useSiteMetadata()

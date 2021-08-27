@@ -22,6 +22,7 @@ export default function UserPreferences(): ReactElement {
       }
       trigger="click focus"
       className={styles.preferences}
+      zIndex={11}
     >
       <Cog aria-label="Preferences" className={styles.icon} />
       <Caret aria-hidden="true" className={styles.caret} />

@@ -1,11 +1,11 @@
 {
   "site": {
-    "siteTitle": "MVG Overview Page",
-    "siteTagline": "Description.",
-    "siteUrl": "https://market.oceanprotocol.com",
-    "siteIcon": "node_modules/@oceanprotocol/art/logo/favicon-white.png",
+    "siteTitle": "Minimal Viable Gaia-X Overview",
+    "siteTagline": "A one-stop overview page to discover all relevant resources in the Minimal Viable Gaia-X context powered by Ocean Protocol.",
+    "siteUrl": "https://minimal-gaia-x.eu",
+    "siteIcon": "./src/images/siteIcon.png",
     "siteImage": "../src/images/share.png",
-    "copyright": "All Rights Reserved. Powered by [Ocean Protocol](https://oceanprotocol.com)",
+    "copyright": "All Rights Reserved. Powered by [Ocean Protocol](https://oceanprotocol.com). Customized and hosted by [deltaDAO](https://delta-dao.com).",
     "warning": {
       "main": "We are in beta. Please familiarize yourself with [the market](https://oceanprotocol.com/technology/marketplaces), [the risks](https://blog.oceanprotocol.com/on-staking-on-data-in-ocean-market-3d8e09eb0a13), and the [Terms of Use](/terms).",
       "polygonPublish": "Only republish data sets with a pool from ETH Mainnet into Polygon/Matic if the liquidity is **less than or equal to 1000 OCEAN in the original pool**. Doing otherwise will lead to [purgatory](https://github.com/oceanprotocol/list-purgatory) for the data set in Polygon/Matic."
