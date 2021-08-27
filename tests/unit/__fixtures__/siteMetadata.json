@@ -61,13 +61,18 @@
         "node": {
           "childContentJson": {
             "site": {
+              "siteTitle": "MVG Overview Page",
+              "siteTagline": "Description.",
+              "siteUrl": "https://market.oceanprotocol.now.sh/",
+              "siteIcon": "node_modules/@oceanprotocol/art/logo/favicon-white.png",
               "siteImage": {
                 "childImageSharp": {
                   "original": {
                     "src": "/static/share-5558ae2d9f99864a95f6f99172be9768.png"
                   }
                 }
-              }
+              },
+              "copyright": "All Rights Reserved. Powered by [Ocean Protocol](https://oceanprotocol.com)"
             }
           }
         }

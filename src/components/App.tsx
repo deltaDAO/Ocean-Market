@@ -38,6 +38,7 @@ export default function App({
   const purgatory = data.purgatory.edges[0].node.childContentJson.account
 
   const { warning, appConfig } = useSiteMetadata()
+
   const { accountId } = useWeb3()
   const { isInPurgatory, purgatoryData } = useAccountPurgatory(accountId)
 

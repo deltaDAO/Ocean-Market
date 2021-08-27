@@ -7,10 +7,6 @@ interface UseSiteMetadata {
   siteIcon: string
   siteImage: { childImageSharp: { original: { src: string } } }
   copyright: string
-  menu: {
-    name: string
-    link: string
-  }[]
   warning: {
     main: string
     polygonPublish: string
@@ -49,10 +45,6 @@ const query = graphql`
         siteUrl
         siteIcon
         copyright
-        menu {
-          name
-          link
-        }
         warning {
           main
           polygonPublish
