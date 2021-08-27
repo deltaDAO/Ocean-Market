@@ -1,34 +1,49 @@
 {
   "resources": [
     {
-      "title": "Gaia-X Catalogue",
+      "title": "📜 Hackathon GitLab Wiki",
+      "desc": "Overview of Hackathon Coding Goals, Sessions, Agenda and Talks.",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/WIP:-Hackathon-Coding-Goals"
+    },
+    {
+      "title": "🎓 MVG Onboarding Tutorial",
+      "desc": "Your onboarding into the MVG based on DLT and Ocean Protocol.",
+      "url": "https://portal.minimal-gaia-x.eu/tutorial"
+    },
+    {
+      "title": "🌀 MVG Portal Demonstrator",
+      "desc": "A platform to find, publish and consume Data Services in the Gaia-X Test Network.",
+      "url": "https://portal.minimal-gaia-x.eu"
+    },
+    {
+      "title": "📘 MVG Catalogue Demonstrator",
       "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network.",
       "url": "https://catalogue.minimal-gaia-x.eu"
     },
     {
-      "title": "Gaia-X Catalogue",
-      "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network.",
+      "title": "🔎 MVG Exchange Logging Service",
+      "desc": "Browse the immutable audit trail of Data Transactions in the Gaia-X Test Network.",
+      "url": "https://blockscout.gaiaxtestnet.oceanprotocol.com/"
+    },
+    {
+      "title": "🌀 Atos MVG Portal",
+      "desc": "A platform to find and consume Earth Observation services in the Gaia-X Test Network.",
       "url": "https://catalogue.minimal-gaia-x.eu"
     },
     {
-      "title": "Gaia-X Catalogue",
-      "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network.",
+      "title": "📱 MVG Catalogue Demo App",
+      "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network on your mobile device.",
       "url": "https://catalogue.minimal-gaia-x.eu"
     },
     {
-      "title": "Gaia-X Catalogue",
-      "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network.",
-      "url": "https://catalogue.minimal-gaia-x.eu"
+      "title": "⛲ Faucet: GX Test Token",
+      "desc": "Request GX Test Tokens, used to power the Gaia-X Test Network.",
+      "url": "https://faucet.gx.gaiaxtestnet.oceanprotocol.com"
     },
     {
-      "title": "Gaia-X Catalogue",
-      "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network.",
-      "url": "https://catalogue.minimal-gaia-x.eu"
-    },
-    {
-      "title": "Gaia-X Catalogue",
-      "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network.",
-      "url": "https://catalogue.minimal-gaia-x.eu"
+      "title": "⛲ Faucet: OCEAN Test Token",
+      "desc": "Request OCEAN Test Tokens, used to access data services in the Gaia-X Test Network.",
+      "url": "https://faucet.gaiaxtestnet.oceanprotocol.com"
     }
   ]
 }
