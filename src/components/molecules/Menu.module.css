@@ -1,3 +1,10 @@
+.wrapper {
+  position: fixed;
+  left: 0;
+  background-color: var(--background-body);
+  width: 100%;
+}
+
 .menu {
   width: 100%;
   padding: calc(var(--spacer) / 2);

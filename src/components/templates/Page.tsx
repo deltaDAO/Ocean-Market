@@ -37,7 +37,7 @@ export default function Page({
   return (
     <>
       <Seo title={title} description={description} uri={uri} />
-      {uri === '/' ? childElements : <Container>{childElements}</Container>}
+      <Container>{childElements}</Container>
     </>
   )
 }

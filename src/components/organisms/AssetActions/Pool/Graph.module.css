@@ -7,7 +7,7 @@
   position: relative;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   .graphWrap {
     margin-left: -2rem;
     margin-right: -2rem;

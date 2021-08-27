@@ -76,5 +76,9 @@ module.exports = {
   // https://github.com/deltaDAO/Ocean-Market/tree/main#-gdpr-compliance
   privacyPreferenceCenter: false,
 
-  displayWarning: false
+  displayWarning: false,
+
+  // Address to open assets from main page
+  assetAddress:
+    process.env.GATSBY_ASSET_ADDRESS || 'https://portal.minimal-gaia-x.eu'
 }

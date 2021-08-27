@@ -46,7 +46,6 @@ export default function Networks(): ReactElement {
     appConfig.chainIdsSupported,
     networksList
   )
-
   return (
     networksMain.concat(networksTest).length > 1 && (
       <Tooltip

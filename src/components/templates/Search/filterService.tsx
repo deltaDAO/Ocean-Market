@@ -10,7 +10,7 @@ const cx = classNames.bind(styles)
 const clearFilters = [{ display: 'Clear', value: '' }]
 
 const serviceFilterItems = [
-  { display: 'data sets', value: FilterByTypeOptions.Data },
+  { display: 'datasets', value: FilterByTypeOptions.Data },
   { display: 'algorithms', value: FilterByTypeOptions.Algorithm }
 ]
 
@@ -59,9 +59,9 @@ export default function FilterPrice({
   }
 
   async function applyClearFilter() {
-    let urlLocation = await addExistingParamsToUrl(location, ['serviceType'])
-
-    urlLocation = `${urlLocation}`
+    const urlLocation = String(
+      await addExistingParamsToUrl(location, ['serviceType'])
+    )
 
     setServiceSelections([])
     setServiceType(undefined)

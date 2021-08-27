@@ -29,6 +29,7 @@ interface UseSiteMetadata {
     allowFreePricing: string
     allowAdvancedSettings: string
     credentialType: string
+    assetAddress: string
     allowAdvancedPublishSettings: string
     displayWarning: boolean
     defaultPrivacyPolicySlug: string
@@ -68,6 +69,7 @@ const query = graphql`
           allowAdvancedSettings
           allowAdvancedPublishSettings
           credentialType
+          assetAddress
           displayWarning
           defaultPrivacyPolicySlug
           privacyPreferenceCenter

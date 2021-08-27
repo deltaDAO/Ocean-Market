@@ -31,7 +31,8 @@ type SortValueOptions = typeof SortValueOptions[keyof typeof SortValueOptions]
 
 export const FilterByTypeOptions = {
   Data: 'dataset',
-  Algorithm: 'algorithm'
+  Algorithm: 'algorithm',
+  Tag: 'tags'
 } as const
 type FilterByTypeOptions =
   typeof FilterByTypeOptions[keyof typeof FilterByTypeOptions]
@@ -213,7 +214,7 @@ export async function addExistingParamsToUrl(
   excludedParams: string[]
 ): Promise<string> {
   const parsed = queryString.parse(location.search)
-  let urlLocation = '/search?'
+  let urlLocation = '/?'
   if (Object.keys(parsed).length > 0) {
     for (const querryParam in parsed) {
       if (!excludedParams.includes(querryParam)) {

@@ -14,7 +14,7 @@
   padding-bottom: calc(var(--spacer) / 1.75);
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   .asset {
     margin-top: -0.65rem;
   }

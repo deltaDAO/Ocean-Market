@@ -1,11 +1,10 @@
 import { DDO } from '@oceanprotocol/lib'
-import { useOcean } from '../../providers/Ocean'
-import { Link } from 'gatsby'
 import React, { ReactElement, useEffect, useState } from 'react'
 import { getAssetsNames } from '../../utils/aquarius'
 import styles from './AssetListTitle.module.css'
 import axios from 'axios'
 import { useSiteMetadata } from '../../hooks/useSiteMetadata'
+import LinkOpener from './LinkOpener'
 
 export default function AssetListTitle({
   ddo,
@@ -43,7 +42,12 @@ export default function AssetListTitle({
 
   return (
     <h3 className={styles.title}>
-      <Link to={`/asset/${did || ddo.id}`}>{assetTitle}</Link>
+      <LinkOpener
+        uri={`${appConfig.assetAddress}/asset/${did || ddo.id}`}
+        openNewTab
+      >
+        {assetTitle}
+      </LinkOpener>
     </h3>
   )
 }

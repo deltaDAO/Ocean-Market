@@ -1,0 +1,124 @@
+.chainsSelected {
+  text-align: center;
+  position: absolute;
+  bottom: -8px;
+  left: 0;
+  width: 100%;
+}
+
+.chainsSelectedIndicator {
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  margin: 0 1px;
+  display: inline-block;
+  background-color: var(--color-primary);
+}
+
+.tagLabel {
+  composes: label from '../../atoms/Input/Label.module.css';
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: var(--color-secondary);
+  font-size: var(--font-size-small);
+  font-weight: var(--font-weight-bold);
+}
+
+.tagLabel:hover {
+  color: var(--font-color-text);
+}
+
+.tagButton {
+  display: flex;
+  flex-direction: row;
+  color: var(--font-color-text);
+  background: inherit;
+  transform: none;
+  border: none;
+  cursor: pointer;
+  white-space: normal;
+}
+
+.tagTooltip {
+  padding: calc(var(--spacer) / 6);
+  padding-left: 0;
+  cursor: pointer;
+  border: 1px solid var(--border-color);
+  border-radius: var(--border-radius);
+  background-color: var(--background-content);
+  white-space: nowrap;
+  height: min-content;
+}
+
+.tagTooltip svg {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.tagTooltip[aria-expanded='true'] svg {
+  transform: rotate(180deg);
+}
+
+.caret,
+svg.caret {
+  width: var(--font-size-small);
+  height: var(--font-size-small);
+  fill: var(--border-color);
+  margin-left: calc(var(--spacer) / 12);
+  margin-right: -5px;
+  transition: transform 0.2s ease-out;
+  display: none;
+}
+
+@media screen and (min-width: 640px) {
+  .caret,
+  svg.caret {
+    display: inline-block;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .tagTooltip {
+    max-width: fit-content;
+    margin-left: 0;
+  }
+}
+
+.icon {
+  fill: var(--brand-grey-light);
+  transition: 0.2s ease-out;
+  width: 1em;
+  height: 1em;
+}
+
+.tagTooltip:hover .icon,
+.tagTooltip:focus .icon,
+.tagTooltip:active .icon,
+.tagTooltip[aria-expanded='true'] .icon {
+  fill: var(--font-color-text);
+}
+
+.tagTooltipDetails {
+  padding: calc(var(--spacer) / 4) calc(var(--spacer) / 2);
+  max-width: 20rem;
+}
+
+.tagTooltipDetails > li > div,
+.tagTooltipDetails p:last-child {
+  margin-bottom: 0;
+}
+
+.tagTooltipDetails li p {
+  margin-top: calc(var(--spacer) / 8);
+}
+
+.tagTooltipDetails > li {
+  padding-top: calc(var(--spacer) / 3);
+  padding-bottom: calc(var(--spacer) / 3);
+}
+
+.tagTooltipDetails li:last-child,
+.tagTooltipDetails li:last-child p {
+  border-bottom: none;
+  margin-bottom: 0;
+}

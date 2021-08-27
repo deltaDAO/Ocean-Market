@@ -31,7 +31,7 @@
   outline: 0;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   .modal {
     padding: calc(var(--spacer) * 2);
   }
@@ -46,7 +46,7 @@
   margin: 0;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   .title {
     font-size: var(--font-size-h2);
   }

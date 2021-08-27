@@ -15,14 +15,18 @@ export default function Menu(): ReactElement {
   const { siteTitle } = useSiteMetadata()
 
   return (
-    <nav className={styles.menu}>
-      <Link to="/" className={styles.logo}>
-        <Logo branding />
-        <h1 className={styles.title}>{siteTitle}</h1>
-      </Link>
-      <div className={styles.actions}>
-        <UserPreferences />
-      </div>
-    </nav>
+    <div className={styles.wrapper}>
+      <Container>
+        <nav className={styles.menu}>
+          <Link to="/" className={styles.logo}>
+            <Logo branding />
+            <h1 className={styles.title}>{siteTitle}</h1>
+          </Link>
+          <div className={styles.actions}>
+            <UserPreferences />
+          </div>
+        </nav>
+      </Container>
+    </div>
   )
 }

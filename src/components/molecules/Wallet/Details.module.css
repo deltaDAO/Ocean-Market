@@ -4,7 +4,7 @@
   min-width: 17rem;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   .details {
     padding: calc(var(--spacer) / 2);
     margin-right: calc(var(--spacer) / 3);

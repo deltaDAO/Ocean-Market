@@ -8,9 +8,9 @@
   overflow-y: auto;
 }
 
-@media (min-width: 40rem) {
+@media (min-width: 640px) {
   .sortList {
-    align-self: flex-end;
+    justify-self: flex-end;
     overflow-y: unset;
   }
 }
