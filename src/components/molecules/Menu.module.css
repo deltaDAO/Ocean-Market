@@ -3,6 +3,7 @@
   left: 0;
   background-color: var(--background-body);
   width: 100%;
+  z-index: 1;
 }
 
 .menu {
