@@ -16,9 +16,9 @@ export default function Menu(): ReactElement {
   return (
     <nav className={styles.menu}>
       <Link to="/" className={styles.logo}>
-        <Logo noWordmark />
+        <Logo branding />
         <h1 className={styles.title}>
-          {siteTitle} {/* <Badge label="v3" /> */}
+          {siteTitle}
         </h1>
       </Link>
       <div className={styles.actions}>
