@@ -33,7 +33,7 @@
     {
       "title": "📱 MVG Catalogue Demo App",
       "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network on your mobile device.",
-      "url": "https://catalogue.minimal-gaia-x.eu"
+      "url": "https://github.com/deltaDAO/GAIA-X-Mobile-Catalogue"
     },
     {
       "title": "⛲ Faucet: GX Test Token",
@@ -44,6 +44,11 @@
       "title": "⛲ Faucet: OCEAN Test Token",
       "desc": "Request OCEAN Test Tokens, used to access data services in the Gaia-X Test Network.",
       "url": "https://faucet.gaiaxtestnet.oceanprotocol.com"
+    }
+     {
+      "title": "⛲ Self-Description Lifecycle Management",
+      "desc": "Manage the Lifecycle of Self-Descriptions in the Gaia-X Test Network.",
+      "url": "https://github.com/deltaDAO/Self-Description-Lifecycle-Management"
     }
   ]
 }
