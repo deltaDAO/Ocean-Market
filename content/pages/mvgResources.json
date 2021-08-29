@@ -23,7 +23,7 @@
     {
       "title": "🎓 Stream 1 - Easy Jump in Guide",
       "desc": "Your onboarding into the MVG based on DLT and Ocean Protocol.",
-      "url": "https://portal.minimal-gaia-x.eu/tutorial"
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Hackathon-%231-Session-1-Easy-to-jump-in"
     },
     {
       "title": "🖧 Hackathon Infrastructure",
@@ -66,6 +66,36 @@
       "url": "https://link.minimal-gaia-x.eu/lifecycle"
     },
     {
+      "title": "💡 Video Tutorial - Web3, Wallets, SSI & DID",
+      "desc": "Video Tutorial on how to create your Web3 Wallet, SSI and DID using MetaMask and 3Box",
+      "url": "https://youtu.be/voKIVfpV34o"
+    },
+    {
+      "title": "💡 Video Tutorial - Consume Data using Smart Contract Access Control and DLT",
+      "desc": "Video Tutorial on how to consume a data service using Smart Contral Access Control",
+      "url": "https://youtu.be/IGUXGlTvFfw"
+    },
+    {
+      "title": "💡 Video Tutorial - Publish Metadata to the MVG Federated Catalogue",
+      "desc": "Video Tutorial on how to publish your data service offering on the MVG Federated Catalogue",
+      "url": "https://youtu.be/kShtG0A_1XI"
+    },
+    {
+      "title": "💡 Video Tutorial - MVG Federated Catalogue based on Smart Contracts",
+      "desc": "Video Tutorial on how to a Federated Catalogue can be build on Smart Contracts and DLT",
+      "url": "https://youtu.be/gdL-lfY-OOI"
+    },
+    {
+      "title": "💡 Video Tutorial - Whitelisting Algorithms for Compute-to-Data Data Services",
+      "desc": "Video Tutorial on how to whitelist algorithms from the Federated Catalogue for Compute-to-Data",
+      "url": "https://youtu.be/dTe04tht_bA"
+    },
+    {
+      "title": "💡 Video Tutorial - Compute-to-Data for Data-Sovereign Data Service Offerings",
+      "desc": "Video Tutorial explaining the principles of Compute-to-Data for data-sovereign data services",
+      "url": "https://youtu.be/aQeD7UefmkE"
+    },
+    {
       "title": "🦊 MetaMask Web3 Wallet",
       "desc": "Use MetaMask to connect to the Web3, manage your keys and to create your SSI",
       "url": "https://metamask.io/"
@@ -106,7 +136,7 @@
       "url": "https://www.gaia-x.eu/architecture-document"
     },
     {
-      "title": "📖 Gaia-X Federation Services Specifications 21.03",
+      "title": "📖 Gaia-X Federation Services Specifications",
       "desc": "Overview of Specification Documents - Gaia-X Federation Services",
       "url": "https://www.gxfs.de/federation-services/overview-specification-documents/"
     },
