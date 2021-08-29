@@ -46,11 +46,6 @@
       "url": "https://link.minimal-gaia-x.eu/dels"
     },
     {
-      "title": "🌍 Stream 2 - Atos MVG Portal",
-      "desc": "A platform to find and consume Earth Observation services in the Gaia-X Test Network.",
-      "url": "https://atos.portal.minimal-gaia-x.eu"
-    },
-    {
       "title": "📱 Stream 2 - MVG Catalogue Demo App",
       "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network on your mobile device.",
       "url": "https://link.minimal-gaia-x.eu/catalogue-app"
@@ -94,11 +89,6 @@
       "title": "🎥 Video Rendering App",
       "desc": "MVG Video Rendering App Repository on GitLab",
       "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/heat-demand-ml"
-    },
-    {
-      "title": "⭐ CNES Orfeo Toolbox",
-      "desc": "CNES Orfeo ToolBox (OTB) for remote sensing and data fusion task",
-      "url": "https://bids-apps.neuroimaging.io/apps/"
     },
     {
       "title": "🧠 BIDS Neuroimaging Apps",
