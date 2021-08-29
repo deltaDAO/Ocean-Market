@@ -1,37 +1,52 @@
 {
   "resources": [
     {
-      "title": "📜 Hackathon GitLab Wiki",
-      "desc": "Overview of Hackathon Coding Goals, Sessions, Agenda and Talks.",
-      "url": "https://link.minimal-gaia-x.eu/wiki"
+      "title": "☑️ 1st Gaia-X Hackathon hopin Event",
+      "desc": "hopin Event Page of the 1st Gaia-X Hackathon",
+      "url": "https://hopin.com/events/gaia-x-hackathon"
     },
     {
-      "title": "🎓 MVG Onboarding Tutorial",
+      "title": "🎯 Hackathon Coding Goals",
+      "desc": "Overview of Hackathon Coding Goals",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Hackathon-Coding-Goals"
+    },
+     {
+      "title": "📺 Hackathon Video Stream Rooms",
+      "desc": "Overview of the 1st Gaia-X Hackathon Video Conference Rooms",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Hackathon-%231-Video-Conference-Rooms"
+    },
+    {
+      "title": "🎓 Stream 2 - MVG Onboarding Tutorial",
       "desc": "Your onboarding into the MVG based on DLT and Ocean Protocol.",
       "url": "https://portal.minimal-gaia-x.eu/tutorial"
     },
     {
-      "title": "🌀 MVG Portal Demonstrator",
+      "title": "🎓 Stream 1 - Easy Jump in Guide",
+      "desc": "Your onboarding into the MVG based on DLT and Ocean Protocol.",
+      "url": "https://portal.minimal-gaia-x.eu/tutorial"
+    },
+    {
+      "title": "🖧 Hackathon Infrastructure",
+      "desc": "The Sovereign Cloud Stack project has reached out to the SCS partners to provide infrastructure",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Infrastructure"
+    },
+    {
+      "title": "🌀 Stream 2 - MVG Portal Demonstrator",
       "desc": "A platform to find, publish and consume Data Services in the Gaia-X Test Network.",
       "url": "https://portal.minimal-gaia-x.eu"
     },
     {
-      "title": "📘 MVG Catalogue Demonstrator",
+      "title": "📘 Stream 2 - MVG Catalogue Demonstrator",
       "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network.",
       "url": "https://catalogue.minimal-gaia-x.eu"
     },
     {
-      "title": "🔎 MVG Exchange Logging Service",
+      "title": "🔎 Stream 2 - MVG Exchange Logging Service",
       "desc": "Browse the immutable audit trail of Data Transactions in the Gaia-X Test Network.",
       "url": "https://link.minimal-gaia-x.eu/dels"
     },
     {
-      "title": "🌀 Atos MVG Portal",
-      "desc": "A platform to find and consume Earth Observation services in the Gaia-X Test Network.",
-      "url": "https://atos.portal.minimal-gaia-x.eu"
-    },
-    {
-      "title": "📱 MVG Catalogue Demo App",
+      "title": "📱 Stream 2 - MVG Catalogue Demo App",
       "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network on your mobile device.",
       "url": "https://link.minimal-gaia-x.eu/catalogue-app"
     },
@@ -49,6 +64,61 @@
       "title": "⛲ Self-Description Lifecycle Management",
       "desc": "Manage the Lifecycle of Self-Descriptions in the Gaia-X Test Network.",
       "url": "https://link.minimal-gaia-x.eu/lifecycle"
+    },
+    {
+      "title": "🦊 MetaMask Web3 Wallet",
+      "desc": "Use MetaMask to connect to the Web3, manage your keys and to create your SSI",
+      "url": "https://metamask.io/"
+    },
+    {
+      "title": "🔍 3Box Login",
+      "desc": "Create and Manage your DID",
+      "url": "https://3box.io/login"
+    },
+    {
+      "title": "✨ MVG Demonstrator Repository",
+      "desc": "MVG Demonstrator Repository on GitLab",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/mvg-demonstrator"
+    },
+    {
+      "title": "🔥 Heat Demand Predication ML App",
+      "desc": "MVG Heat Demand Prediciation App Repository on GitLab",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/heat-demand-ml"
+    },
+     {
+      "title": "🎥 Video Rendering App",
+      "desc": "MVG Video Rendering App Repository on GitLab",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/video-rendering"
+    },
+    {
+      "title": "🧠 BIDS Neuroimaging Apps",
+      "desc": "Repository of the available BIDS apps",
+      "url": "https://bids-apps.neuroimaging.io/apps/"
+    },
+    {
+      "title": "💕 Heartbeat Detection Task Data",
+      "desc": "OpenNeuro - Interoception during aging: The heartbeat detection task",
+      "url": "https://openneuro.org/datasets/ds003763/versions/1.0.0"
+    },
+    {
+      "title": "📘 Gaia-X Architecture Document 21.06",
+      "desc": "Gaia-X Publications - Architecure Document 21.06",
+      "url": "https://www.gaia-x.eu/architecture-document"
+    },
+    {
+      "title": "📖 Gaia-X Federation Services Specifications 21.03",
+      "desc": "Overview of Specification Documents - Gaia-X Federation Services",
+      "url": "https://www.gxfs.de/federation-services/overview-specification-documents/"
+    },
+    {
+      "title": "🖊️ Open Work Package Self-Descriptions",
+      "desc": "GitLab Repository of the Open Work Package Self-Descriptions",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gaia-x-self-descriptions"
+    },
+    {
+      "title": "🌱 Eclipse Dataspace Connector",
+      "desc": "Eclipse Dataspace Connector provides a connector framework for data exchange",
+      "url": "https://projects.eclipse.org/proposals/eclipse-dataspace-connector"
     }
   ]
 }
