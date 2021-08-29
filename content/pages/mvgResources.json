@@ -6,24 +6,14 @@
       "url": "https://hopin.com/events/gaia-x-hackathon"
     },
     {
-      "title": "📜 Hackathon GitLab Wiki",
-      "desc": "Overview of Hackathon Coding Goals, Sessions, Agenda and Talks.",
-      "url": "https://link.minimal-gaia-x.eu/wiki"
+      "title": "🎯 Hackathon Coding Goals",
+      "desc": "Overview of Hackathon Coding Goals",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Hackathon-Coding-Goals"
     },
      {
       "title": "📺 Hackathon Video Stream Rooms",
       "desc": "Overview of the 1st Gaia-X Hackathon Video Conference Rooms",
       "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Hackathon-%231-Video-Conference-Rooms"
-    },
-    {
-      "title": "🎯 Hackathon Coding Goals",
-      "desc": "Overview of Hackathon Coding Goals",
-      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Hackathon-Coding-Goals"
-    },
-    {
-      "title": "🖧 Hackathon Infrastructure",
-      "desc": "The Sovereign Cloud Stack project has reached out to the SCS partners to provide infrastructure",
-      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Infrastructure"
     },
     {
       "title": "🎓 Stream 2 - MVG Onboarding Tutorial",
@@ -34,6 +24,11 @@
       "title": "🎓 Stream 1 - Easy Jump in Guide",
       "desc": "Your onboarding into the MVG based on DLT and Ocean Protocol.",
       "url": "https://portal.minimal-gaia-x.eu/tutorial"
+    },
+    {
+      "title": "🖧 Hackathon Infrastructure",
+      "desc": "The Sovereign Cloud Stack project has reached out to the SCS partners to provide infrastructure",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Infrastructure"
     },
     {
       "title": "🌀 Stream 2 - MVG Portal Demonstrator",
