@@ -31,6 +31,16 @@
       "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Infrastructure"
     },
     {
+      "title": "📺 Stream 2 - MVG powered by Ocean Protocol: A video series",
+      "desc": "Youtube playlist containing some introductory videos describing the capabilities of a MVG powered by Ocean Protocol",
+      "url": "https://www.youtube.com/playlist?list=PLIQKB1A_2Iyv-FKEUZ5EQSuOZQpgPy6y9"
+    },
+    {
+      "title": "Stream 2 - MVG Demonstrators GitLab Project",
+      "desc": "MVG Portal and Catalogue Demonstrators",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/mvg-demonstrator/mvg-demonstrators-powered-by-ocean-protocol"
+    },
+    {
       "title": "🌀 Stream 2 - MVG Portal Demonstrator",
       "desc": "A platform to find, publish and consume Data Services in the Gaia-X Test Network.",
       "url": "https://portal.minimal-gaia-x.eu"
