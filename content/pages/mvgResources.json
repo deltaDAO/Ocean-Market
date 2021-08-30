@@ -46,6 +46,11 @@
       "url": "https://portal.minimal-gaia-x.eu"
     },
     {
+      "title": "⭐ Stream 2 - MVG Data Space Demonstrator",
+      "desc": "A Demonstrator to illustrate how a federator can cater specific data spaces, i.e. w. Copernicus Sentinel Data.",
+      "url": "https://atos.portal.minimal-gaia-x.eu/"
+    },
+    {
       "title": "📘 Stream 2 - MVG Catalogue Demonstrator",
       "desc": "Browse and discover Data and their Self-Descriptions in the Gaia-X Test Network.",
       "url": "https://catalogue.minimal-gaia-x.eu"
