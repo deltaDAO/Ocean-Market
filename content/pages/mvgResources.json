@@ -1,19 +1,9 @@
 {
   "resources": [
-    {
-      "title": "☑️ 1st Gaia-X Hackathon hopin Event",
-      "desc": "hopin Event Page of the 1st Gaia-X Hackathon",
-      "url": "https://hopin.com/events/gaia-x-hackathon"
-    },
-    {
-      "title": "🎯 Hackathon Coding Goals",
-      "desc": "Overview of Hackathon Coding Goals",
-      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Hackathon-Coding-Goals"
-    },
      {
-      "title": "📺 Hackathon Video Stream Rooms",
-      "desc": "Overview of the 1st Gaia-X Hackathon Video Conference Rooms",
-      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-1/-/wikis/Hackathon-%231-Video-Conference-Rooms"
+      "title": "🎯 2nd Gaia-X Hackathon, December 2-3, 2021",
+      "desc": "2nd Gaia-X Hackathon 2021",
+      "url": "https://gitlab.com/gaia-x/gaia-x-community/gx-hackathon/gx-hackathon-2"
     },
     {
       "title": "🎓 Stream 2 - MVG Onboarding Tutorial",
@@ -141,9 +131,9 @@
       "url": "https://openneuro.org/datasets/ds003763/versions/1.0.0"
     },
     {
-      "title": "📘 Gaia-X Architecture Document 21.06",
-      "desc": "Gaia-X Publications - Architecure Document 21.06",
-      "url": "https://www.gaia-x.eu/architecture-document"
+      "title": "📘 Gaia-X Architecture Document 21.09",
+      "desc": "Gaia-X Publications - Architecure Document 21.09",
+      "url": "https://www.gaia-x.eu/sites/default/files/2021-10/Gaia-X_Architecture_Document_2109.pdf"
     },
     {
       "title": "📖 Gaia-X Federation Services Specifications",
