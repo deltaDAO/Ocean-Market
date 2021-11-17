@@ -1,10 +1,12 @@
 import React, { ReactElement } from 'react'
-import ReactPlayer from 'react-player'
+import ReactPlayer, { Config } from 'react-player'
 
 export default function VideoPlayer({
-  videoUrl
+  videoUrl,
+  config
 }: {
   videoUrl: string
+  config?: Config
 }): ReactElement {
-  return <ReactPlayer url={videoUrl} controls pip width="100%" />
+  return <ReactPlayer url={videoUrl} controls pip width="100%" {...config} />
 }

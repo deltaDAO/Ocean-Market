@@ -18,6 +18,7 @@ import { useSiteMetadata } from '../../hooks/useSiteMetadata'
 import { useUserPreferences } from '../../providers/UserPreferences'
 import Container from '../atoms/Container'
 import HomeIntro from '../organisms/HomeIntro'
+import VideoPlayer from '../molecules/VideoPlayer'
 
 function getQueryLatest(chainIds: number[]): SearchQuery {
   return {
@@ -120,12 +121,11 @@ export default function HomePage(): ReactElement {
   return (
     <Permission eventType="browse">
       <>
-        {/* <Container>
-          <section className={styles.section}>
-            <h3>Bookmarks</h3>
-            <Bookmarks />
-          </section>
-        </Container> */}
+        <section className={styles.video}>
+          <div className={styles.playerWrapper}>
+            <VideoPlayer videoUrl="https://youtu.be/R49CXPTRamg" />
+          </div>
+        </section>
         <section className={styles.intro}>
           <HomeIntro />
         </section>
