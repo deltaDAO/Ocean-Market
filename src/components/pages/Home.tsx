@@ -19,9 +19,13 @@ import { useUserPreferences } from '../../providers/UserPreferences'
 import Container from '../atoms/Container'
 import HomeIntro from '../organisms/HomeIntro'
 import VideoPlayer from '../molecules/VideoPlayer'
+import { useAddressConfig } from '../../hooks/useAddressConfig'
 
-function getQueryLatest(chainIds: number[]): SearchQuery {
-  return {
+function getQueryLatest(
+  chainIds: number[],
+  featuredAssets: string[]
+): SearchQuery {
+  const latestQuery = {
     page: 1,
     offset: 9,
     query: {
@@ -33,6 +37,21 @@ function getQueryLatest(chainIds: number[]): SearchQuery {
     },
     sort: { created: -1 }
   }
+
+  const featuredQuery = {
+    page: 1,
+    offset: featuredAssets.length,
+    query: {
+      query_string: {
+        query: featuredAssets.map((feat) => `id:${feat}`).join(' ')
+      }
+    },
+    sort: { created: 1 }
+  }
+
+  const query = featuredAssets.length > 0 ? featuredQuery : latestQuery
+
+  return query
 }
 
 function sortElements(items: DDO[], sorted: string[]) {
@@ -117,7 +136,7 @@ export function SectionQueryResult({
 
 export default function HomePage(): ReactElement {
   const { chainIds } = useUserPreferences()
-
+  const { featured, hasFeaturedAssets } = useAddressConfig()
   return (
     <Permission eventType="browse">
       <>
@@ -131,8 +150,10 @@ export default function HomePage(): ReactElement {
         </section>
         <Container>
           <SectionQueryResult
-            title="Recently Published"
-            query={getQueryLatest(chainIds)}
+            title={
+              hasFeaturedAssets() ? 'Featured Assets' : 'Recently Published'
+            }
+            query={getQueryLatest(chainIds, featured)}
             action={
               <Button style="text" to="/search?sort=created&sortOrder=desc">
                 All data sets and algorithms →
