@@ -1,0 +1,34 @@
+.logoText {
+  margin: var(--spacer) auto;
+  max-width: 80%;
+}
+
+.dataXChange {
+  max-width: 50%;
+}
+
+.dataXChange div[class*='conic'] {
+  width: 100%;
+  height: 100%;
+  background: var(--brand-pink);
+  background-image: conic-gradient(
+    from 180deg,
+    var(--brand-pink),
+    var(--brand-violet)
+  );
+}
+
+.tagLine {
+  font-size: var(--font-size-h1);
+  font-weight: var(--font-weight-heavy);
+  color: var(--brand-grey-dimmed);
+  margin-top: calc(var(--spacer) * 4);
+  margin-bottom: calc(var(--spacer) * 2);
+  text-transform: lowercase;
+}
+
+.tagLine span {
+  background: var(--brand-gradient);
+  padding: 0 calc(var(--spacer) / 6);
+  line-height: var(--line-height);
+}

@@ -2,6 +2,7 @@ import React, { ReactNode, ReactElement } from 'react'
 import PageHeader from '../molecules/PageHeader'
 import Seo from '../atoms/Seo'
 import Container from '../atoms/Container'
+import Gradient from '../atoms/Gradient'
 
 export interface PageProps {
   children: ReactNode
@@ -23,6 +24,9 @@ export default function Page({
   return (
     <>
       <Seo title={title} description={description} uri={uri} />
+
+      <Gradient />
+
       <Container>
         {title && !noPageHeader && (
           <PageHeader

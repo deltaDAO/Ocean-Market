@@ -44,7 +44,10 @@ import { BestPrice } from '../../../../models/BestPrice'
 import { useCancelToken } from '../../../../hooks/useCancelToken'
 import { useIsMounted } from '../../../../hooks/useIsMounted'
 import { BaseQueryParams } from '../../../../models/aquarius/BaseQueryParams'
-import { SortTermOptions } from '../../../../models/SortAndFilters'
+import {
+  SortDirectionOptions,
+  SortTermOptions
+} from '../../../../models/SortAndFilters'
 import { SearchQuery } from '../../../../models/aquarius/SearchQuery'
 
 const SuccessAction = () => (
@@ -141,7 +144,10 @@ export default function Compute({
 
     const baseParams = {
       chainIds: [chainId],
-      sort: { sortBy: SortTermOptions.Created },
+      sortOptions: {
+        sortBy: SortTermOptions.Created,
+        sortDirection: SortDirectionOptions.Descending
+      },
       filters: [
         getFilterTerm('service.attributes.main.type', 'algorithm'),
         getFilterTerm('id', algorithmDidList)

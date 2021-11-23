@@ -1,0 +1,42 @@
+.container {
+  margin: calc(var(--spacer) * 6) 0;
+}
+
+@media screen and (min-width: 50rem) {
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: right;
+  }
+
+  .container.mirror {
+    flex-direction: row-reverse;
+    text-align: left;
+  }
+}
+
+.container > * {
+  flex: 1 1 0;
+}
+
+.svg {
+  max-width: 30rem;
+  margin: auto;
+}
+
+.content {
+  padding: var(--spacer);
+}
+
+.content h3 {
+  text-transform: lowercase;
+  font-size: var(--font-size-h1);
+}
+
+.content button,
+.content a[class*='button'] {
+  display: block;
+  margin: var(--spacer) auto;
+  margin-right: auto;
+}

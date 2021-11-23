@@ -38,10 +38,20 @@
 .input:focus {
   width: calc(100% - var(--spacer));
   background-color: var(--background-content);
+  border-color: var(--brand-grey-lighter);
   position: fixed;
   left: calc(var(--spacer) / 2);
   right: 0;
   z-index: 2;
+}
+
+.input::placeholder {
+  color: var(--brand-grey-lighter);
+  opacity: 1;
+}
+
+.input:focus::placeholder {
+  color: var(--font-color-text);
 }
 
 @media screen and (min-width: 78rem) {

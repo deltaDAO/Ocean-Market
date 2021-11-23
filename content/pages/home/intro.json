@@ -1,0 +1,17 @@
+{
+  "desc": "data exchange",
+  "boxes": [
+    {
+      "title": "privacy preserving",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero labore voluptates libero rem dolor tenetur dolorum nostrum facilis atque a, nam ratione amet illo velit. Sapiente tenetur ipsa inventore eaque."
+    },
+    {
+      "title": "self-sovereign",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero labore voluptates libero rem dolor tenetur dolorum nostrum facilis atque a, nam ratione amet illo velit. Sapiente tenetur ipsa inventore eaque."
+    },
+    {
+      "title": "decentralized",
+      "body": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero labore voluptates libero rem dolor tenetur dolorum nostrum facilis atque a, nam ratione amet illo velit. Sapiente tenetur ipsa inventore eaque."
+    }
+  ]
+}

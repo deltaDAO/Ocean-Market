@@ -225,6 +225,10 @@ export async function getAssetsFromDidList(
 
     const baseParams = {
       chainIds: chainIds,
+      sortOptions: {
+        sortBy: SortTermOptions.Created,
+        sortDirection: SortDirectionOptions.Descending
+      },
       filters: [getFilterTerm('id', didList)],
       ignorePurgatory: true
     } as BaseQueryParams
@@ -247,6 +251,10 @@ export async function retrieveDDOListByDIDs(
     const orderedDDOListByDIDList: DDO[] = []
     const baseQueryparams = {
       chainIds,
+      sortOptions: {
+        sortBy: SortTermOptions.Created,
+        sortDirection: SortDirectionOptions.Descending
+      },
       filters: [getFilterTerm('id', didList)],
       ignorePurgatory: true
     } as BaseQueryParams
@@ -400,6 +408,10 @@ export async function getDownloadAssets(
   try {
     const baseQueryparams = {
       chainIds,
+      sortOptions: {
+        sortBy: SortTermOptions.Created,
+        sortDirection: SortDirectionOptions.Descending
+      },
       filters: [
         getFilterTerm('id', didList),
         getFilterTerm('service.type', 'access')

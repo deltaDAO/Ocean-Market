@@ -22,6 +22,6 @@
     "./tests/**/*",
     "./app.config.js",
     "./address.config.js",
-    "./chains.config.ts"
+    "./chains.config.js"
   ]
 }

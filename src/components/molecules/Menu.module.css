@@ -44,7 +44,7 @@
   display: none;
 }
 
-@media screen and (min-width: 42rem) {
+@media screen and (min-width: 44rem) {
   .menu {
     justify-content: start;
   }
@@ -63,7 +63,7 @@
   }
 }
 
-@media screen and (min-width: 55rem) {
+@media screen and (min-width: 65rem) {
   .menu {
     padding: var(--spacer);
   }
@@ -72,7 +72,7 @@
     margin: 0;
     margin-right: var(--spacer);
     display: block;
-    color: var(--color-secondary);
+    color: var(--brand-grey-dimmed);
     font-size: var(--font-size-h4);
   }
 }
@@ -100,33 +100,71 @@
 .link {
   display: block;
   padding: calc(var(--spacer) / 4) calc(var(--spacer) / 2);
-  text-transform: uppercase;
-  color: var(--color-secondary);
+  text-transform: lowercase;
+  color: var(--brand-grey-lighter);
   font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-base);
+  font-size: var(--font-size-large);
   position: relative;
   z-index: 1;
+  padding: calc(var(--spacer) / 4);
+}
+
+.link:after {
+  content: '';
+  position: absolute;
+  background-color: var(--color-primary);
+  height: 2px;
+  left: 1px;
+  right: 1px;
+  bottom: 0;
+  -webkit-transform-origin: 0 50%;
+  transform-origin: 0 50%;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  transition: -webkit-transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
+}
+
+.actions input,
+.actions button,
+.actions div[class*='tooltip'],
+.actions div[class*='network'] {
+  border-color: var(--brand-grey-lighter);
+  background: transparent;
+}
+
+.actions svg {
+  fill: var(--brand-grey-lighter) !important;
+}
+.actions *:hover svg:not(*[class*='searchIcon']) {
+  fill: var(--brand-grey-dimmed) !important;
 }
 
 .actions,
 .link:hover,
 .link:focus,
 .link:active {
-  color: var(--font-color-text);
+  color: var(--brand-grey-dimmed);
 }
 
 .link[aria-current],
 .link[aria-current]:hover,
 .link[aria-current]:focus {
-  color: var(--font-color-heading);
+  color: var(--brand-grey-dimmed);
 }
 
-.link:last-child {
-  padding-right: 0;
+.link:hover:after,
+.link:focus:after {
+  transform: scaleX(1);
 }
 
 .logo svg {
   margin-right: calc(var(--spacer) / 3);
+}
+
+.navigation li:last-child .link {
+  padding-right: 0;
 }
 
 .actions button {

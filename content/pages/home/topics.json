@@ -1,0 +1,22 @@
+{
+  "topics": [
+    {
+      "svg": "data_economy",
+      "title": "A new data economy",
+      "content": "Aren’t you tired of tech-giants utilizing, monetizing and owning data you should own? We are determined to help shift the data economy so that you can actually **own your own data**.\n\nTo accomplish what we set out for, we are leveraging technology called [Ocean Protocol](https://oceanprotocol.com), a Web3 toolkit enabling secure and privacy-preserving publishment, discovery and consumption of data.",
+      "cta": {
+        "call": "find out more",
+        "action": "https://github.com/deltaDAO/Ocean-Protocol-Use-Cases"
+      }
+    },
+    {
+      "svg": "education",
+      "title": "Learn how to unleash your data",
+      "content": "While we are in beta status, dataXchange is working software you can **try out right now**.\n\nTo get you started we prepared an interactive tutorial to guide you through unleashing your first data service in a testing playground and start **experiencing the new data economy today**.",
+      "cta": {
+        "call": "get started",
+        "action": "/tutorial"
+      }
+    }
+  ]
+}

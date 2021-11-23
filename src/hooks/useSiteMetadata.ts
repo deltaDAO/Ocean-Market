@@ -37,6 +37,11 @@ interface UseSiteMetadata {
     displayWarning: boolean
     defaultPrivacyPolicySlug: string
     privacyPreferenceCenter: string
+    darkModeConfig: {
+      classNameDark: string
+      classNameLight: string
+      storageKey: string
+    }
   }
 }
 
@@ -78,6 +83,11 @@ const query = graphql`
           credentialType
           defaultPrivacyPolicySlug
           privacyPreferenceCenter
+          darkModeConfig {
+            classNameDark
+            classNameLight
+            storageKey
+          }
         }
       }
     }

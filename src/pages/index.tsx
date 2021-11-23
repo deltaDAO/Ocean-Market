@@ -12,7 +12,7 @@ export default function PageGatsbyHome(props: PageProps): ReactElement {
       title={siteTitle}
       description={siteTagline}
       uri={props.uri}
-      headerCenter
+      noPageHeader
     >
       <PageHome />
     </Page>

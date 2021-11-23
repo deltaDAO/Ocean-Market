@@ -44,7 +44,7 @@ export default function App({
   return (
     <Styles>
       <div className={styles.app}>
-        {appConfig.displayWarning && (props as PageProps).uri === '/' && (
+        {(props as PageProps).uri === '/' && (
           <AnnouncementBanner text={warning.main} />
         )}
         <Header />

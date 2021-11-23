@@ -9,8 +9,7 @@
 }
 
 .section h3 {
-  font-size: var(--font-size-large);
-  color: var(--color-secondary);
+  color: var(--font-color-heading);
 }
 
 .section [class*='button'] {

@@ -19,6 +19,7 @@ import { queryMetadata, getFilterTerm, generateBaseQuery } from './aquarius'
 import { fetchDataForMultipleChains } from './subgraph'
 import { OrdersData_tokenOrders_datatokenId as OrdersDatatoken } from '../@types/apollo/OrdersData'
 import { BaseQueryParams } from '../models/aquarius/BaseQueryParams'
+import { SortDirectionOptions, SortTermOptions } from '../models/SortAndFilters'
 
 const getComputeOrders = gql`
   query ComputeOrders($user: String!) {
@@ -79,6 +80,10 @@ async function getAssetMetadata(
 ): Promise<DDO[]> {
   const baseQueryparams = {
     chainIds,
+    sortOptions: {
+      sortBy: SortTermOptions.Created,
+      sortDirection: SortDirectionOptions.Descending
+    },
     filters: [
       getFilterTerm('dataToken', queryDtList),
       getFilterTerm('service.type', 'compute'),

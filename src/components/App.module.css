@@ -1,7 +1,5 @@
 .app {
   height: 100%;
-  background: url('../images/waves.svg') no-repeat center 17.5rem;
-  background-size: 40rem;
 
   /* sticky footer technique */
   display: flex;

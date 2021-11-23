@@ -13,6 +13,7 @@ import NumberUnit from '../../../molecules/NumberUnit'
 import styles from './Stats.module.css'
 import { useProfile } from '../../../../providers/Profile'
 import { PoolShares_poolShares as PoolShare } from '../../../../@types/apollo/PoolShares'
+import { useSiteMetadata } from '../../../../hooks/useSiteMetadata'
 
 async function getPoolSharesLiquidity(
   poolShares: PoolShare[]
@@ -34,6 +35,7 @@ export default function Stats({
 }): ReactElement {
   const { chainIds } = useUserPreferences()
   const { poolShares, assets, assetsTotal, sales } = useProfile()
+  const { allowDynamicPricing } = useSiteMetadata().appConfig
 
   const [publisherLiquidity, setPublisherLiquidity] = useState<UserLiquidity>()
   const [totalLiquidity, setTotalLiquidity] = useState(0)
@@ -86,16 +88,25 @@ export default function Stats({
 
   return (
     <div className={styles.stats}>
-      <NumberUnit
-        label="Liquidity in Own Assets"
-        value={
-          <Conversion price={publisherLiquidity?.price} hideApproximateSymbol />
-        }
-      />
-      <NumberUnit
-        label="Total Liquidity"
-        value={<Conversion price={`${totalLiquidity}`} hideApproximateSymbol />}
-      />
+      {allowDynamicPricing === 'true' && (
+        <>
+          <NumberUnit
+            label="Liquidity in Own Assets"
+            value={
+              <Conversion
+                price={publisherLiquidity?.price}
+                hideApproximateSymbol
+              />
+            }
+          />
+          <NumberUnit
+            label="Total Liquidity"
+            value={
+              <Conversion price={`${totalLiquidity}`} hideApproximateSymbol />
+            }
+          />
+        </>
+      )}
       <NumberUnit label={`Sale${sales === 1 ? '' : 's'}`} value={sales} />
       <NumberUnit label="Published" value={assetsTotal} />
     </div>
